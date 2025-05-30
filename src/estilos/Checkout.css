@@ -1,0 +1,135 @@
+/* Estilos para la página de checkout */
+
+.pagina-checkout {
+  margin-bottom: 3rem;
+}
+
+.btn-volver {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.btn-volver:hover {
+  transform: translateX(-5px);
+}
+
+.card {
+  border: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1.5rem;
+}
+
+.card-header {
+  background-color: #FFF8DC;
+  border-bottom: none;
+  padding: 1rem 1.25rem;
+}
+
+.card-header h5 {
+  font-weight: 600;
+  color: #3E2723;
+  margin-bottom: 0;
+}
+
+.forma-pago-option {
+  background-color: white;
+  border: 1px solid #ced4da;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.forma-pago-option:hover {
+  background-color: #f8f9fa;
+}
+
+.forma-pago-option .form-check-input:checked ~ .form-check-label {
+  font-weight: 600;
+}
+
+.producto-resumen {
+  padding: 1rem 1.25rem;
+}
+
+.cantidad-resumen {
+  font-weight: 600;
+  margin-right: 0.5rem;
+  color: #8B4513;
+}
+
+.nombre-producto-resumen {
+  color: #3E2723;
+}
+
+.precio-producto-resumen {
+  font-weight: 600;
+}
+
+.total-precio-checkout {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #8B4513;
+}
+
+.btn-completar-compra {
+  background-color: #8B4513;
+  border-color: #8B4513;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.btn-completar-compra:hover {
+  background-color: #723A0A;
+  border-color: #723A0A;
+  transform: translateY(-2px);
+}
+
+.orden-completada {
+  text-align: center;
+  padding: 3rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.icono-exito {
+  display: inline-block;
+  animation: bounce 1s ease-in-out;
+}
+
+.btn-volver-inicio {
+  background-color: #8B4513;
+  border-color: #8B4513;
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  transition: all 0.3s ease;
+}
+
+.btn-volver-inicio:hover {
+  background-color: #723A0A;
+  border-color: #723A0A;
+  transform: translateY(-2px);
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Ajustes responsive */
+@media (max-width: 991.98px) {
+  .resumen-orden {
+    margin-bottom: 2rem;
+  }
+}

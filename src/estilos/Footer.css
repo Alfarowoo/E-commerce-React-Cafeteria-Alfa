@@ -1,0 +1,72 @@
+/* Estilos para el pie de página */
+
+.footer-cafe {
+  background-color: #3E2723;
+  color: #FFF8DC;
+  padding: 2rem 0 0;
+}
+
+.footer-heading {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  color: #D4AF37;
+}
+
+.footer-text {
+  color: #EEE;
+  line-height: 1.6;
+}
+
+.footer-list li, 
+.footer-contact li {
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+}
+
+.footer-contact li svg {
+  margin-right: 0.5rem;
+  color: #D4AF37;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.2rem;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #FFF;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  background-color: #D4AF37;
+  color: #3E2723;
+  transform: translateY(-3px);
+}
+
+.footer-divider {
+  border-color: rgba(255, 255, 255, 0.1);
+  margin: 1.5rem 0;
+}
+
+.footer-copyright {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+}
+
+/* Ajustes responsive */
+@media (max-width: 767.98px) {
+  .footer-heading {
+    margin-top: 1.5rem;
+  }
+}

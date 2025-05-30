@@ -1,0 +1,113 @@
+/* Estilos para la barra de navegación */
+
+.navbar-cafe {
+  padding: 1rem 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.brand-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #8B4513;
+}
+
+.logo-icon {
+  color: #8B4513;
+}
+
+.nav-link {
+  color: #3E2723;
+  font-weight: 500;
+  margin: 0 0.5rem;
+  padding: 0.5rem 0.8rem;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: #8B4513;
+}
+
+.active-link {
+  color: #8B4513 !important;
+  font-weight: 600;
+}
+
+.active-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0.8rem;
+  right: 0.8rem;
+  height: 2px;
+  background-color: #D4AF37;
+}
+
+.carrito-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.carrito-icon:hover {
+  background-color: rgba(139, 69, 19, 0.1);
+}
+
+.usuario-nombre {
+  font-weight: 500;
+  color: #3E2723;
+}
+
+.btn-logout {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.btn-logout:hover {
+  transform: translateY(-2px);
+}
+
+.btn-login {
+  display: inline-flex;
+  align-items: center;
+  background-color: #8B4513;
+  border-color: #8B4513;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.btn-login:hover {
+  background-color: #723A0A;
+  border-color: #723A0A;
+  transform: translateY(-2px);
+}
+
+/* Ajustes responsive */
+@media (max-width: 991.98px) {
+  .navbar-brand {
+    margin-right: auto;
+  }
+  
+  .nav-link {
+    margin: 0.5rem 0;
+  }
+  
+  .active-link::after {
+    display: none;
+  }
+
+  .usuario-nombre {
+    margin: 0.5rem 0;
+  }
+
+  .btn-logout {
+    margin-top: 0.5rem;
+    width: 100%;
+    justify-content: center;
+  }
+}
